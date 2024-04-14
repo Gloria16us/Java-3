@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* styling the body */
+body {
+  font-family: "Open Sans", sans-serif;;
+  background: rgb(226, 237, 240);
+  color: rgb(20, 39, 50) ; /*This affect the color of the texts inside the body*/
+  line-height: 24px; /*this affect the height of h1,h2, etc in the body*/
+  font-size: 14px; /*affects the size of the notes under the item and price*/
+}
+
+/* styling the ul */
+ul {
+    list-style-type: none;
+}
+
+
+/* styling the img */
+img:not(.logo) {
+    width: 100%; /* this addresses the width of individal image in the box*/
+} 
+
+/* styling the image itself */
+img {
+    /* height: 200px;
+    width: 300px; */
+    display: block;
+}
+
+
+/* styling the underline under menu */
+.underline {
+    width: 80px; 
+    height: 4px;
+    background: #c59d5f;;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* styling the title where the Menu at the top is*/
+.title {
+    text-align: center; /*this moves the menu to the center same as the underline*/
+    margin-bottom: 16px;
+}
+
+
+/* styling the menu, where it should start and end */
+.menu {
+    /* margin-top: 3rem; */
+    padding: 5rem 0; /* that is 5 rem(5*16px) top and bottom. 0 rem left and right. ( 1 rem equals 16px) */
+}
+
+
+
+  /*styling the h1 to h4 note 1rem=16px */
+h1, h2, h3, h4 {
+    letter-spacing: 8px;
+    text-transform: capitalize;
+    line-height: 1.25rem; /*that is 24px*/
+    margin-bottom: 12px;
+    font-family: "Roboto", sans-serif;
+}
+
+    /* styling the font size of the individual elements */
+h1 {
+       font-size: 30px;
+}
+
+/* h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
+} */
+
+h4 {
+  font-size: 14px;
+}
+
+p {
+    margin-bottom: 20px; color: rgb(61, 122, 140)
+}
+
+
+
+    
+/*  global classes */
+/* styling the btn button */
+.btn {
+    text-transform: uppercase;
+    background: transparent;
+    color: #222;
+    padding: 6px 12px;
+    letter-spacing: 4px;
+    display: inline-block;
+    transition: all 0.3s linear;
+    font-size: 14px;
+    border: 2px solid #222;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+
+/* styling the hover of the btn */
+.btn:hover {
+    color: #fff;
+    background: #222;
+}
+
+
+/* styling the btn-container */
+.btn-container {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* styling the filter button */
+  .filter-btn {
+    background: transparent;
+    border-color: #c59d5f ;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0 8px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: #c59d5f;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+
+
+ /* styling the filter-btn hover */
+.filter-btn:hover {
+    background: #c59d5f;
+    color: #fff;
+}
+
+
+  /* styling the section-center */
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    gap: 48px 40px; /*this affects the gap between one item on the section-center and the other*/
+    justify-items: center;
+}
+
+
+  /* styling the menu-item  which contain the img and item info(price and note)*/
+  .menu-item {
+    /* margin: 10px 100px; */
+    display: grid; /* makes the image and note to be in a grid form and be on the same line */
+    gap: 16px 32px; /* up and down, left and right */
+    max-width: 25rem; /* that is, 400px the width of the total menu-item*/
+  }
+
+  /* styling the borders of the photo to be confined in the golden box*/
+.photo {
+    object-fit: fill; /* this fills the image to the box*/
+    /* height: 300px; */
+    width: 100%; /* Ensure the image takes full width and height as downloaded */
+    /* padding: 2px; */
+    height: 200px;
+    border: 4px solid #c59d5f;
+    border-radius: 8px;
+}
+
+
+  /* styling the header of the item-info which contain the item name and price inside the menu-item */
+.item-info header {
+    display: flex; /* makes the statement and price to be on a line */
+    justify-content: space-between;
+    border-bottom: 0.5px dotted rgb(79, 141, 130); /* for the dotted line under the price*/
+  }
+
+
+  /* styling the h4 of the item-info (name and price) */
+.item-info h4 {
+    margin-bottom: 3px;
+}
+
+  /* styling the price color */
+.price {
+    color: #c59d5f;
+}
+
+
+  /* styling the item-text */
+.item-text {
+    margin-bottom: 0px;
+    padding-top: 16px;
+}
+
+
+  /* section */
+.section {
+    padding: 80px 0px;
+}
+  
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+ /*media query*/
+@media screen and (min-width: 768px) {
+    .menu-item {
+      grid-template-columns: 225px 1fr;
+      gap: 0 1.25rem;
+      max-width: 40rem;
+    }
+    .photo {
+      height: 175px;
+    }
+  }  
+  
+ 
+   @media screen and (min-width: 1200px) {
+    .section-center {
+      width: 95vw;
+      grid-template-columns: 1fr 1fr;
+    }
+    .photo {
+      height: 150px;
+    }
+  }
+   

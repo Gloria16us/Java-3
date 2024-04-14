@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Nigerian Restaurant Menu</title>
+   <link rel="stylesheet" href="menu.css">
+   <!-- link from fontawesome cdnjs -->
+   <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+   />
+
+   <!-- link from fontawesome -->
+   <script src="https://kit.fontawesome.com/4e4113349d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <!-- Section starts here --> 
+    <!-- shortcut to build section class: section.menu -->
+    <section class="menu">
+
+        <!-- Title classs -->
+        <div class="title">
+            <h1>Our Menu</h1>
+            <h1>
+                <span style="font-size: 10px;"><i class="fa-solid fa-face-laugh-wink fa-xl"></i></span>
+                <span style="font-style: italic; color: red; font-size: 10px;letter-spacing: none;">Your Satisfaction is our priority!</span> 
+            </h1>
+            <!-- creating underline class inside the div title -->
+            <div class="underline">
+            </div>
+         </div>
+
+
+
+          <!-- filter buttons (contain the 4 buttons) starts here-->
+          <div class="btn-container">
+              <button type="button" class="filter-btn" data-id="all">all</button>
+              <button type="button" class="filter-btn" data-id="breakfast">
+                breakfast
+              </button>
+              <button type="button" class="filter-btn" data-id="lunch">lunch</button>
+              <button type="button" class="filter-btn" data-id="drinks">
+                drinks
+              </button>
+          </div>
+          
+
+
+          <!-- menu items -->
+          <!-- Section-center is responsible for come layout of all the article classes -->
+        <div class="section-center">
+
+          <!-- single item -->
+          <!-- article class with image and info -->
+          <article class="menu-item">
+              <img src="noodles and egg.jpeg" class="photo"  alt="menu item">
+
+              <div class="item-info">
+
+                  <header>
+                      <h4>Noodles and Egg</h4>
+                      <h4 class="price">N2500</h4>
+                  </header>
+
+                  <p class="item-text"> 
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nesciunt laboriosam, ut minus obcaecati natus laudantium 
+                      voluptas cupiditate atque quos magni?
+                  </p>
+
+                    
+              </div> 
+
+           </article>
+            <!-- end of single item1 -->
+
+
+
+            <!-- single item2 -->
+          <article class="menu-item">
+              <img src="friedrice.jpeg" alt="menu item" class="photo" />
+              <div class="item-info">
+                <header>
+                  <h4>friedrice</h4>
+                  <h4 class="price">N3500</h4>
+                </header>
+                <p class="item-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quidem magnam nisi porro possimus hic aspernatur cupiditate rerum itaque?
+              
+                </p>
+              </div>
+            </article>
+            <!-- end of single item2 -->
+
+
+            <!-- single item3 -->
+           <article class="menu-item">
+              <img src="zobo.jpeg" alt="menu item" class="photo" />
+              <div class="item-info">
+                <header>
+                  <h4>Zobo</h4>
+                  <h4 class="price">N300</h4>
+                </header>
+                <p class="item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae
+                </p>
+              </div>
+           </article>
+            <!-- end of single item3 -->
+
+
+
+       </div>
+
+
+
+          
+    </section>
+
+      
+   <!-- Javascript section -->
+   <script src="menu.js"> </script>
+  </body>
+</html>
